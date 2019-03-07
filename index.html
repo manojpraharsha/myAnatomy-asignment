@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <title>Events</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" name="SKYPE_TOOLBAR">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=1" />
+    <link href="css/style.css" rel="stylesheet" media="all" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <main>
+        <article>
+            <div class="gridWrapper">
+                <h1>Event Card</h1>
+                <div class="event-info-container">
+                    <ul class="headings">
+                        <li><span>Images</span></li>
+                        <li><span>Title </span></li>
+                        <li class="desc"><span>Description & Hosted by details</span></li>
+                        <li><span>Tags </span></li>
+                        <li class="admin"><span>Actions</span></li>
+                    </ul>
+                    <ul class="event-info-imp">
+                        <li><img src="images/event.jpg" alt=""></li>
+                        <li><span>Title :</span>Birthday</li>
+                        <li class="desc"><span>Description & Hosted by details:</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                        <li><span>Tags :</span>#birthday | #manoj |#paris</li>
+                        <li class="admin">
+                            <ul class="actions">
+                                <li class="status"><a href="" class="active"><i class="fas fa-circle"></i><span>Deactivate</span></a></li>
+                                <li class="edit"><a href=""><i class="fas fa-edit"></i><span>Edit</span></a></li>
+                                <li class="delete"><a href=""><i class="fas fa-trash-alt"></i><span>Remove</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="event-info-imp">
+                        <li><img src="images/event.jpg" alt=""></li>
+                        <li><span>Title :</span>Marriage</li>
+                        <li class="desc"><span>Description & Hosted by details:</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                        <li><span>Tags :</span>#marriage | #manoj |#dubai</li>
+                        <li class="admin">
+                            <ul class="actions">
+                                <li class="status"><a href="" class="deactive"><i class="fas fa-circle"></i><span>Activate</span></a></li>
+                                <li class="edit"><a href=""><i class="fas fa-edit"></i><span>Edit</span></a></li>
+                                <li class="delete"><a href=""><i class="fas fa-trash-alt"></i><span>Remove</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="add"><a href="javascript:void(0);" id="addEvent">+ Add Event</a></div>
+
+                </div>
+            </div>
+            
+            <div class="modalOverlay" id="modal">
+                <div class="modalForm">
+                    <div class="form">
+                       <span class="close">x</span>
+                        <form action="" method="post" enctype="multipart/form-data">
+                           <ul>
+                               <li>
+                                   <lable for="file">Event Image:</lable>
+                                   <input type="file" name="file" id="file">
+                               </li>
+                               <li>
+                                   <lable for="title">Event Title:</lable>
+                                   <input type="text" name="title" id="title" placeholder="Event Title">
+                               </li>
+                               <li>
+                                   <lable for="desc">Description & Hosted by details:</lable>
+                                   <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+                               </li>
+                               <li>
+                                   <lable for="tags">Event Tags:</lable>
+                                   <input type="text" name="tags" id="tags" placeholder="#evntname,#entplace">
+                               </li>
+                               <li>
+                                   <lable for="submit">Event Tags:</lable>
+                                   <input type="submit" name="submit" id="submit" value="Submit">
+                               </li>
+                           </ul>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</body>
+
+</html>
